@@ -30,7 +30,7 @@
 
 	<databus.pkcs12File>${user.home}/.m2/webid_bundle.p12</databus.pkcs12File>
         <databus.downloadUrlPath>
-			https://raw.githubusercontent.com/yum-yab/ontology/${dataIdHash}/databus/${project.groupId}/
+		https://raw.githubusercontent.com/yum-yab/ontology/${dataIdHash}/databus/${project.groupId}/${project.artifactId}/
 	</databus.downloadUrlPath>
         <databus.publisher>https://yum-yab.github.io/webid.ttl#this</databus.publisher>
         <!-- moved to settings.xml
