@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://openenergy-platform.org/ontology/oeo/"
+     xml:base="http://openenergy-platform.org/ontology/oeo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bfo="http://purl.obolibrary.org/obo/bfo.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:oeo="http://openenergy-platform.org/ontology/v0.0.1/oeo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://openenergy-platform.org/ontology/oeo-social/">
+        <owl:versionIRI rdf:resource="http://openenergy-platform.org/ontology/v0.0.1/oeo-social/"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/imports/imports_module%3Dro.owl"/>
+        <terms:title>Open Energy Ontology (Social module)</terms:title>
+        <rdfs:comment>The Open Energy Ontology is an ontology for all aspects of the energy modelling domain. The &apos;Social&apos; module covers entities that relate to people and the social, organisational and economic environment in which energy is produced and consumed, including sector, organisation, and various roles.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://openenergy-platform.org/ontology/oeo/definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/conforms_to -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/conforms_to">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openenergy-platform.org/ontology/oeo/conforms_to"/>
+                <owl:someValuesFrom rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/covers -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/covers"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/covers_sector -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/covers_sector">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/covers"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication/model calculation/model and the sector it models.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_author -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_author">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication/model and its author.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_client -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_client">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication/model and the client that requested its creation.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_contact -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_contact">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication/model and the person to contact with issues about it.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_funding_source -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_funding_source">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication/model and its source of funding.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_institution -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_institution">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a publication and the institution in which it was created.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo-social/Producer -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo-social/Producer">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>A producer is an agent that makes goods to sell them.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Agent -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">Agent is a role of a person or organisation that directs its activity towards achieving goals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Author -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Author">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>An author is an agent that creates or has created written work.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Client -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Client">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>A client is an agent that receives a product or service.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CommerceSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CommerceSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <rdfs:label xml:lang="en">ServiceSector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Consumer -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Consumer">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/User"/>
+        <obo:IAO_0000115 xml:lang="en">A consumer is a user of a commercial product or service.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ContactPerson -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ContactPerson">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>A ContactPerson is an agent that can be contacted for help or information about a specific service or good.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DemandSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DemandSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">A demand sector is a general term for different consumptions (households; industry; commercial sector; transport). It includes only energy demand sectors.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ElectricitySector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ElectricitySector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">Covers all areas that deal with electrical energy (power generation; electricity transmission; electricity storage; electricity use).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://wiki.openmod-initiative.org/wiki/Electricity_sector</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/EnergySector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/EnergySector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">An energy sector is a sector that contains the energy production.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/HeatSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/HeatSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">Energy used for heating and cooling for buildings and industry</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">HeatingCoolingSector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/HouseholdSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/HouseholdSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">The household sector covers all private entities. A household is a  shared living unit.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/IndustrySector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/IndustrySector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">Industry consumption is specified as follows (energy used for transport by industry is not included here but is reported under transport):
+
+* Iron and steel industry
+* Chemical and petrochemical industry
+* Non-ferrous metals
+* Non-metallic minerals
+* Transport equipment
+* Machinery
+* Mining (excluding fuels) and quarrying
+* Food and tobacco
+* Paper, pulp and print
+* Wood and wood products (other than pulp and paper)
+* Construction
+* Textile and leather
+* Non-specified (any manufacturing industry not included above)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Institution -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Institution">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Organization"/>
+        <obo:IAO_0000115 xml:lang="en">An institution is an organization that serve a social purpose.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Organization -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Organization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://openenergy-platform.org/ontology/oeo/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://openenergy-platform.org/ontology/oeo/Person"/>
+        <obo:IAO_0000115 xml:lang="en">An organization is a structure with multiple people that has a collective goal.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Person -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A person is a human beeing.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/PoliticalParty -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Organization"/>
+        <obo:IAO_0000115 xml:lang="en">A political party is a organization of a group of people with common views or goals that wants to have influence in politics.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Prosumer -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Prosumer">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115 xml:lang="en">A prosumer is an agent who is producer and consumer at the same time.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Sector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Sector">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A sector is a subdivision in an economic system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SectorDivision -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SectorDivision">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A SectorDivision is a specific way to subdivide a system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SoftwareDeveloper -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SoftwareDeveloper">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>A SoftwareDeveloper is an agent that creates computer software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TCSSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TCSSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DemandSector"/>
+        <obo:IAO_0000115 xml:lang="en">A TCS sector is a demand sector that includes the energy consumption from trade, commerce and services.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TrafficSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TrafficSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DemandSector"/>
+        <obo:IAO_0000115 xml:lang="en">A traffic sector is a demand sector that includes the energy consumption from traffic.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TransportSector -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TransportSector">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Sector"/>
+        <obo:IAO_0000115 xml:lang="en">Consumption in transport covers all transport activity (in mobile engines) regardless of the economic sector to which it is contributing, and is specified as follows:
+
+* Domestic aviation
+* Road: fuels used in road vehicles as well as agricultural and industrial highway use
+* Rail, including industrial railways.
+* Pipeline transport
+* Domestic navigation
+* Non-specified: includes all transport not elsewhere specified.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/User -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/User">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Agent"/>
+        <obo:IAO_0000115>A user is an agent that employs an aid, tool or information system to achieve a goal/benefit.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Eurostat_Energy_Balances -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Eurostat_Energy_Balances">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000115>The concept of &quot;energy balance&quot; is an accounting framework for the compilation and understanding of data on all energy products entering, exiting and being used in a country. The energy balance is the most complete statistical accounting of energy products and their flow in the economy. Columns of the energy balance represent energy products (fuels). Rows represent energy flows.
+
+The energy balance expresses all forms of energy in a common accounting unit. The balance shows the relationships between supply, inputs to the energy transformation processes and their outputs as well as the actual energy consumption by different sectors of end-use.</obo:IAO_0000115>
+        <obo:IAO_0000116>This is a general description of an energy balance. A link to a complete Eurostat energy balance is provided under the URL for &apos;definition source&apos;</obo:IAO_0000116>
+        <obo:IAO_0000119>https://ec.europa.eu/eurostat/statistics-explained/index.php/Energy_balance#What_is_an_energy_balance.3F</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/German_Energy_Balances -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/German_Energy_Balances">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000115>Das Schema der Energiebilanzen umfasst eine Matrix von 33 Spalten und 68 Zeilen (einschließlich der Summenspalten und -zeilen). In der horizontalen Gliederung (Spalten) werden die Energieträger ausgewiesen, die der energetischen und nichtenergetischen Nutzung dienen. In der vertikalen Gliederung (Zeilen) werden für die jeweiligen Energieträger Aufkommen, Umwandlung und Verwendung erfasst.
+
+Als Energieträger werden alle Quellen oder Stoffe bezeichnet, in denen Energie mechanisch, thermisch, chemisch oder physikalisch gespeichert ist. Fünf Kerngruppe werden bei der Energiebilanz unterschieden:
+
+    Fossile Brennstoffe
+    Erneuerbare Energien
+    Strom
+    Kernbrennstoffe
+    Fernwärme
+
+Bilanzebenen
+Schematische Darstellung des Bilanzraums der deutschen Arbeitsgemeinschaft Energiebilanzen
+Primär- und Endenergie sowie Umwandlungsverluste
+
+Die Abgrenzung erfolgt in drei Bilanzbereichen:
+
+    die Primärenergiebilanz,
+    die Umwandlungsbilanz und
+    der Endenergieverbrauch.
+
+In der Primärenergiebilanz werden die Energieträger mit ihrem Mengenaufkommen bei der Gewinnung und Anlieferung nach folgenden Kriterien erfasst:
+
+    inländische Gewinnung von Energieträgern,
+    Außenhandel mit Energieträgern, unterteilt nach Einfuhr und Ausfuhr,
+    Hochseebunkerungen (Heizöl, Dieselkraftstoff und Schmierstoffe für die nationale und internationale Seeschifffahrt in deutschen Häfen. Ohne Lieferungen an Binnen- und Küstenmotorschiffe und Fischerei, die zum Sektor Verkehr (Endenergieverbrauch) zählen.)
+    Bestandsveränderungen, getrennt erfasst nach Bestandsentnahmen und -aufstockungen</obo:IAO_0000115>
+        <obo:IAO_0000116>The German Energy Balance is managed by the &apos;AG Energiebilanzen&apos;, where aso the energy balances can be found: https://ag-energiebilanzen.de/</obo:IAO_0000116>
+        <obo:IAO_0000119>https://de.wikipedia.org/w/index.php?title=Energiebilanz_(Energiewirtschaft)&amp;oldid=176259115</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/IPCC_1996_Guidelines -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/IPCC_1996_Guidelines">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000115>The sectoral approach taken for reporting greenhouse gas inventories under UNFCCC; version of 1996 (revised).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.ipcc-nggip.iges.or.jp/public/gl/invs6.html</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/IPCC_2006_Guidelines -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/IPCC_2006_Guidelines">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000115>The sectoral approach taken for reporting greenhouse gas inventories under UNFCCC; version of 2006.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.ipcc-nggip.iges.or.jp/public/2006gl/index.html</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/NACE_Sectors -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/NACE_Sectors">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000115>The Statistical classification of economic activities in the European Community, abbreviated as NACE, is the classification of economic activities in the European Union (EU); the term NACE is derived from the French Nomenclature statistique des activités économiques dans la Communauté européenne. Various NACE versions have been developed since 1970.
+
+NACE is a four-digit classification providing the framework for collecting and presenting a large range of statistical data according to economic activity in the fields of economic statistics (e.g. production, employment and national accounts) and in other statistical domains developed within the European statistical system (ESS).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Statistical_classification_of_economic_activities_in_the_European_Community_(NACE)</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Renewable_Energy_Directive_Sectors -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Renewable_Energy_Directive_Sectors">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/SectorDivision"/>
+        <obo:IAO_0000116>The Renewable Energy Directive has been revised, but this should have had no impacts on the sectoral definitions. Factsheet on revision: https://ec.europa.eu/energy/sites/ener/files/documents/directive_renewable_factsheet.pdf</obo:IAO_0000116>
+        <obo:IAO_0000119>https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009L0028</obo:IAO_0000119>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/CommerceSector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/HouseholdSector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/IndustrySector"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/ElectricitySector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/HeatSector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/TransportSector"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/HouseholdSector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/IndustrySector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/TCSSector"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/TrafficSector"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

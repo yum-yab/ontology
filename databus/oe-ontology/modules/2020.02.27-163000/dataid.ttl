@@ -1,0 +1,148 @@
+
+
+######
+#     #   ##   #####   ##   #####  #    #  ####
+#     #  #  #    #    #  #  #    # #    # #
+#     # #    #   #   #    # #####  #    #  ####
+#     # ######   #   ###### #    # #    #      #
+#     # #    #   #   #    # #    # #    # #    #
+######  #    #   #   #    # #####   ####   ####
+
+# Plugin version 1.3-SNAPSHOT - https://github.com/dbpedia/databus-maven-plugin
+
+
+@prefix dataid-mt: <http://dataid.dbpedia.org/ns/mt#> .
+@prefix databus: <https://databus.dbpedia.org/> .
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dataid-cv: <http://dataid.dbpedia.org/ns/cv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dataid-debug: <http://dataid.dbpedia.org/ns/debug.ttl#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+<>      a                       dataid:DataId ;
+        rdfs:comment            "Metadata created by the DBpedia Databus Maven Plugin: https://github.com/dbpedia/databus-maven-plugin (Version 1.3-SNAPSHOT)\nThe DataID ontology is a metadata omnibus, which can be extended to be interoperable with all metadata formats\nNote that the metadata (the dataid.ttl file) is always CC-0, the files are licensed individually\nMetadata created by https://yum-yab.github.io/webid.ttl#this" ;
+        rdfs:label              "DataID metadata for oe-ontology/modules"@en ;
+        dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion          "1.3-SNAPSHOT" ;
+        dct:issued              "2020-02-27T16:07:55Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-zero1.0> ;
+        dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
+        dct:title               "DataID metadata for oe-ontology/modules"@en .
+
+dataid-cv:tag  rdfs:subPropertyOf  dataid:contentVariant .
+
+<https://databus.dbpedia.org/denis/oe-ontology>
+        a       dataid:Group .
+
+<https://databus.dbpedia.org/denis/oe-ontology/modules>
+        a       dataid:Artifact .
+
+dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
+        dataid:mimetype  "UNKNOWN" .
+
+<#Dataset>  a                   dataid:Dataset ;
+        rdfs:comment            "The Open Energy Ontology is an ontology for all aspects of the energy modelling domain."@en ;
+        rdfs:label              "The modules of the Open Energy Ontology"@en ;
+        dataid:account          databus:denis ;
+        dataid:artifact         <https://databus.dbpedia.org/denis/oe-ontology/modules> ;
+        dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:group            <https://databus.dbpedia.org/denis/oe-ontology> ;
+        dataid:groupdocu        "## Attribution fulfilled by\n* (when deriving another dataset and releasing to the Databus) adding the Databus link to the provenance https://databus.dbpedia.org/dbpedia/oe-ontology/modules/modules/2020.02.27-163000\n* on your website:\n  * include the DBpedia logo and mention the usage of DBpedia with this link: https://databus.dbpedia.org/dbpedia\n  * include backlinks from your pages to the individual entities, e.g. http://dbpedia.org/resource/Berlin\n* in academic publications cite: DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia, J. Lehmann, R. Isele, M. Jakob, A. Jentzsch, D. Kontokostas, P. Mendes, S. Hellmann, M. Morsey, P. van Kleef, S. Auer, and C. Bizer. Semantic Web Journal 6 (2): 167--195 (2015)\n## How to contribute\nDBpedia is a community project, help us with:\n* editing the mappings and ontology at http://mappings.dbpedia.org\n* improve this documentation at https://github.com/dbpedia/databus-maven-plugin/tree/master/dbpedia/mappings/modules/modules.md\n## Origin\nThis dataset was extracted using the wikipedia-dumps available on https://dumps.wikimedia.org/\nusing the DBpedia Extraction-Framework available at https://github.com/dbpedia/extraction-framework\nFor more technical information on how these datasets were generated, please visit http://dev.dbpedia.org\n## Group changelog" ;
+        dataid:maintainer       <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:version          <https://databus.dbpedia.org/denis/oe-ontology/modules/2020.02.27-163000> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:description         "The 'Model' module covers entities for models, assumptions, parameters, data, software and all the processes that transform these, including model execution and data transformation.\nThe 'Physical' module covers all those aspects of the world that are relevant for the energy systems domain, including physical entities such as generators, power lines, technologies, hardware, portions of matter; attributes of those, such as the energy they carry or release, whether they can be a pollutant, or their origins; representational transformations into maps and measures, such as coordinates, units, quantities; and the processes that modify the physical entities, such as energy production.\nThe 'Social' module covers entities that relate to people and the social, organisational and economic environment in which energy is produced and consumed, including sector, organisation, and various roles." ;
+        dct:hasVersion          "2020.02.27-163000" ;
+        dct:issued              "2020-02-27T16:07:55Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
+        dct:title               "The modules of the Open Energy Ontology"@en ;
+        dcat:distribution       <#modules_social.omn> , <#modules_physical.omn> , <#modules_model.omn> .
+
+<#modules_physical.omn>
+        a                            dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "physical" ;
+        dataid:duplicates            "326"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/modules/2020.02.27-163000/modules_physical.omn> ;
+        dataid:formatExtension       "" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "1960"^^xsd:decimal ;
+        dataid:preview               "Prefix: : <http://openenergy-platform.org/ontology/oeo/>\nPrefix: bfo: <http://purl.obolibrary.org/obo/bfo.owl#>\nPrefix: dc: <http://purl.org/dc/elements/1.1/>\nPrefix: obda: <https://w3id.org/obda/vocabulary#>\nPrefix: oeo: <http://openenergy-platform.org/ontology/v0.0.1/oeo/>\nPrefix: owl: <http://www.w3.org/2002/07/owl#>\nPrefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPrefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPrefix: xml: <http://www.w3.org/XML/1998/namespace>\nPrefix: xsd: <http://www.w3.org/2001/XMLSchema#>" ;
+        dataid:sha256sum             "e4c43a3207eab218293f3f7d8f024b56aee0b446a8a09d696aaea09b00115d8a" ;
+        dataid:signature             "Gt8q5JAIIEw+1Mp/On4o8uk0GU/yshjv3/R3scBE13aN3b2ieO6IrOJymE3NSIbBxx56WAdyV0thlQdWjtrAeNREXExYlF3R9FZDox/4Lmhf3ilTwXJur61RJIfWZGKX9jhCGyL08P41pdwRB22qXGBUWFpI85jxNmefnydXgV2UEQG0fvgBrakcQW6k/scl8llupVK87K1aQqmnP5KMZ5wqPyiGUU9vLq8aK1yujhkzLxkkrYVLzIvAgI4+Oge3aEQT1nSrJg7wuYNJs/kCz16SYmaqplsWWdt8N7Oqw7VqU/p09ZSzonRXAUcgwPb6aeB3RaPIc6oR9KbvUkL1XQ==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "130184"^^xsd:decimal ;
+        dataid-cv:tag                "physical" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.02.27-163000" ;
+        dct:issued                   "2020-02-27T16:07:55Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-02-27T16:06:53Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "130184"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/modules/modules_physical.omn> ;
+        dcat:mediaType               dataid-mt:UNKNOWN .
+
+<#modules_model.omn>  a              dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "model" ;
+        dataid:duplicates            "195"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/modules/2020.02.27-163000/modules_model.omn> ;
+        dataid:formatExtension       "" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "775"^^xsd:decimal ;
+        dataid:preview               "Prefix: : <http://openenergy-platform.org/ontology/oeo/>\nPrefix: bfo: <http://purl.obolibrary.org/obo/bfo.owl#>\nPrefix: dc: <http://purl.org/dc/elements/1.1/>\nPrefix: obda: <https://w3id.org/obda/vocabulary#>\nPrefix: oeo: <http://openenergy-platform.org/ontology/v0.0.1/oeo/>\nPrefix: owl: <http://www.w3.org/2002/07/owl#>\nPrefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPrefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPrefix: xml: <http://www.w3.org/XML/1998/namespace>\nPrefix: xsd: <http://www.w3.org/2001/XMLSchema#>" ;
+        dataid:sha256sum             "2756175ea0a527394b3db093d17525f7f28fdb50fb97bf73dbd26d0a819813a4" ;
+        dataid:signature             "ZLkSQymvoHCO6BzP1lzk3TpBkcuMfzKn88G3uDe6IaiTLhH3l9nFWZA9u3d7gjE3qgGigx6lnoidof9J0n4ZAyO+R++PnAGJOd7TyKqgmSLufs8MYczX4Bwbx/2Hz2+zrs50Wqlx0ANqQrQE8xUPqSgkWcZhbBezMESul1fRFv5E5oTfb7jBxHpJwOBFq4X1hsrTxqB5GUAm5maviHuHfuU7NJju3nzi8rV9f/6v9llddKRW3LXdBClxNzyie47o1oFIHo4gKOn6i/heYbZeNnW6faTLNyq6JMSdb1HOaanXi9y7pNUk3DdY2EXWqwFFW3Z9QNSME8uMpvCH0nXHmw==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "28212"^^xsd:decimal ;
+        dataid-cv:tag                "model" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.02.27-163000" ;
+        dct:issued                   "2020-02-27T16:07:55Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-02-27T16:06:53Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "28212"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/modules/modules_model.omn> ;
+        dcat:mediaType               dataid-mt:UNKNOWN .
+
+<https://databus.dbpedia.org/denis/oe-ontology/modules/2020.02.27-163000>
+        a       dataid:Version .
+
+<#modules_social.omn>
+        a                            dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "social" ;
+        dataid:duplicates            "41"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/modules/2020.02.27-163000/modules_social.omn> ;
+        dataid:formatExtension       "" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "307"^^xsd:decimal ;
+        dataid:preview               "Prefix: : <http://openenergy-platform.org/ontology/oeo/>\nPrefix: bfo: <http://purl.obolibrary.org/obo/bfo.owl#>\nPrefix: dc: <http://purl.org/dc/elements/1.1/>\nPrefix: obda: <https://w3id.org/obda/vocabulary#>\nPrefix: oeo: <http://openenergy-platform.org/ontology/v0.0.1/oeo/>\nPrefix: owl: <http://www.w3.org/2002/07/owl#>\nPrefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPrefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPrefix: xml: <http://www.w3.org/XML/1998/namespace>\nPrefix: xsd: <http://www.w3.org/2001/XMLSchema#>" ;
+        dataid:sha256sum             "bd1290370579f0a7681a0c10214b7b2fb26c9c2b269687707f68b1def926d082" ;
+        dataid:signature             "Ik4NDF707AD+YgeVKFsmHL/vqDKGOg7p3UCnwFpRSCdYPoBOPuaKy5LS5gAL2Fne/dptStoEElVw2piQ4HhkdkPh8RKwyetUKMuQ3Ht30QgN1EYaFWzz1O0c/IXyzFXN/JUvxv4cIGzVYzRyWf+DA9htvbpEI6xlV4xjVeAqgAnvFVvb8X/xXNxbVZNMHhIk0bpN6h/2yNsEOvWYqMvAw9YGr9tkya9WElociOUUNgaCOPFunZY/VIflohhHYQ/qVZBYqqtuK27ZXYsMYpllO4eTVPMSzbL3eNextCLoJgevZi4C7R/6XbQLzUS+KWEKfFf9PuGHvHw38ngn23WEsQ==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "17459"^^xsd:decimal ;
+        dataid-cv:tag                "social" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.02.27-163000" ;
+        dct:issued                   "2020-02-27T16:07:55Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-02-27T16:06:53Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "17459"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/modules/modules_social.omn> ;
+        dcat:mediaType               dataid-mt:UNKNOWN .

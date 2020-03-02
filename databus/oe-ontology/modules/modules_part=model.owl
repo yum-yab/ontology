@@ -1,0 +1,2004 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://openenergy-platform.org/ontology/oeo/"
+     xml:base="http://openenergy-platform.org/ontology/oeo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bfo="http://purl.obolibrary.org/obo/bfo.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:oeo="http://openenergy-platform.org/ontology/v0.0.1/oeo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://openenergy-platform.org/ontology/oeo-model/">
+        <owl:versionIRI rdf:resource="http://openenergy-platform.org/ontology/v0.0.1/oeo-model/"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/imports/imports_module%3Diao.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/imports/imports_module%3Dro.owl"/>
+        <terms:title>Open Energy Ontology (Modelling module)</terms:title>
+        <rdfs:comment>The Open Energy Ontology is an ontology for all aspects of the energy modelling domain. The &apos;Model&apos; module covers entities for models, assumptions, parameters, data, software and all the processes that transform these, including model execution and data transformation.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://openenergy-platform.org/ontology/oeo/definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/conforms_to -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/conforms_to">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/data_provided -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/data_provided">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/generates_dataset -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/generates_dataset">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/hasNumeral -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/hasNumeral"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/hasUnitofMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/hasUnitofMeasurement"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_approach_to_uncertainty -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_approach_to_uncertainty">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_author -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_author"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_client -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_client"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_complexity -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_complexity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_constraint -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_constraint">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and the constraints it has to fulfill.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_contact -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_contact"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_funding_source -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_funding_source"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_license -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_license">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_logo -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_logo">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_mathematical_objective -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_mathematical_objective">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_numercical_input -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_numercical_input">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://openenergy-platform.org/ontology/oeo/Transformation"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and its input.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_numerical_output -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_numerical_output">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://openenergy-platform.org/ontology/oeo/Transformation"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and its output.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_objective -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_objective">
+        <rdfs:domain rdf:resource="http://openenergy-platform.org/ontology/oeo/Optimization"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between an optimization and its objective function or objective variable.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_objectivefunction -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_objectivefunction">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/has_objective"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between an optimization and its objective function.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_objectivevariable -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_objectivevariable">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/has_objective"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between an optimization and its objective variable.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_physical_output -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_physical_output">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and its output.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_programvariable -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_programvariable">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a model and a program variable it uses.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_resolution -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_resolution">
+        <obo:IAO_0000115 xml:lang="en">A relation thst holds between a publication/model/model calculation and the resolution it uses.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_spatial_resolution -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_spatial_resolution">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/has_resolution"/>
+        <obo:IAO_0000115 xml:lang="en">A relation thst holds between a publication/model/model calculation and the spacial resolution it uses.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_support_community_forum -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_support_community_forum">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_temporal_resolution -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_temporal_resolution">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/has_resolution"/>
+        <obo:IAO_0000115 xml:lang="en">A relation thst holds between a publication/model/model calculation and the time resolution it uses.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_tool -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_tool">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelCalculation"/>
+        <rdfs:range rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that  holds between a model calculation and the model it is using.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_typical_computation_hardware -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_typical_computation_hardware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_typical_computation_time -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_typical_computation_time">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/has_website -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/has_website">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/is_available_on_GitHub -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/is_available_on_GitHub">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/is_referenced_by -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/is_referenced_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://openenergy-platform.org/ontology/oeo/references"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/link_to_source_code -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/link_to_source_code">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/makes_assumption -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/makes_assumption">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and and an assumption made for its execution.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/references -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/references">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/source_code_available -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/source_code_available">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/is_referenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses"/>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses_dataset -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses_dataset">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/uses"/>
+        <obo:IAO_0000115 xml:lang="en">A relation that holds between a transformation and a dataset it uses as input.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses_external_optimizer -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses_external_optimizer">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/uses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses_software -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses_software">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/uses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses_software_internal_data_processing -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses_software_internal_data_processing">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/uses_software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/uses_software_modelling -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/uses_software_modelling">
+        <rdfs:subPropertyOf rdf:resource="http://openenergy-platform.org/ontology/oeo/uses_software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/utilizes_dataset -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/utilizes_dataset">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/utilizes_program_parameter -->
+
+    <owl:ObjectProperty rdf:about="http://openenergy-platform.org/ontology/oeo/utilizes_program_parameter">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/API -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/API">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Interface"/>
+        <owl:disjointWith rdf:resource="http://openenergy-platform.org/ontology/oeo/GUI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Acronym -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Acronym">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <obo:IAO_0000115 xml:lang="en">An acronym is a abbreviation of the title by using the first letters of each part of the title.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/AnalyticalApproach -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/AnalyticalApproach">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ContentDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Assumption -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Assumption">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">The predicted demographic development for a country in the future.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An assumption is a statement about a property of a system or process that is considered to be true.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/AutoModelGenerator -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/AutoModelGenerator">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/BooleanVariable -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/BooleanVariable">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Variable"/>
+        <obo:IAO_0000115 xml:lang="en">A boolean variable is a variable that can only be true or false.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CitationReference -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CitationReference">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CodeDocumentation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CodeDocumentation">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CodeSource -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CodeSource">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CollaborativeProgramming -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CollaborativeProgramming">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/OpenSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Community -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Community">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Support"/>
+        <obo:IAO_0000115 xml:lang="en">A consumer is a person or organization that uses economic services or commodities. A consumer is one that buys good for consumption and not for the resale and commercial purpose. The consumer is an individual who pays some amount of money or the thing required to consume goods and services produced.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Consumer&amp;oldid=906220763</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ComputationTime -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ComputationTime">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Constraint -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Constraint">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;The carbon dioxide emissions in Germany have to be reduced by 95% till 2050.&quot; is a constraint for a model calculation about the energy system.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A constraint is a condition that has to be fullfilled within a calculation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ContentDescriptor -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ContentDescriptor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CorporateIdentity -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/CorporateIdentity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Cost -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Cost">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DOI -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DOI">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <obo:IAO_0000115 xml:lang="en">A DOI (digital object identifier) is a persistent identifier or handle used to uniquely identify objects, standardized by the International Organization for Standardization (ISO).
+source: https://en.wikipedia.org/wiki/Digital_object_identifier</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataDescriptor -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataDescriptor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataFormat -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataFormat">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataDescriptor"/>
+        <owl:disjointWith rdf:resource="http://openenergy-platform.org/ontology/oeo/OpenSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataPostprocessing -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataPostprocessing">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataPreprocessing -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataPreprocessing">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataProcessing -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataProcessing">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataProcessingSoftware -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/DataProcessingSoftware">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Database -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Database">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Documentation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Documentation">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareMaintenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Ecological -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Ecological">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Economical -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Economical">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/EmpiricalDataset -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/EmpiricalDataset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <owl:disjointWith rdf:resource="http://openenergy-platform.org/ontology/oeo/SynthethicDataset"/>
+        <obo:IAO_0000112 xml:lang="en">The measurement series of some experiment.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An empirical dataset is a dataset that is optained from observations in the real world.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ExternalOptimizer -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ExternalOptimizer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Factsheet -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Factsheet">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/EmpiricalDataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/FixedOperationCost -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/FixedOperationCost">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Forum -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Forum">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Support"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Framework -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Framework">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/FrameworkFactsheet -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/FrameworkFactsheet">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Factsheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/FuelPrice -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/FuelPrice">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Funding -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Funding">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareMaintenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/GUI -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/GUI">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/GridModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/GridModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/InstallationGuide -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/InstallationGuide">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Interface -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Interface">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/InvestmentCost -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/InvestmentCost">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/License -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/License">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/LinearOptimalPowerflow -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/LinearOptimalPowerflow">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/GridModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Logo -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Logo">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/CorporateIdentity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MarketModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/MarketModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MathematicalConcept -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/MathematicalConcept">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Maximization -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Maximization">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MethodicalFocus -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/MethodicalFocus">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ContentDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Minimization -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Minimization">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Model -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Model">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelingSoftware"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A model is a tool for computing the behavior of a system using an idealized representation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelCalculation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelCalculation">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Transformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openenergy-platform.org/ontology/oeo/has_tool"/>
+                <owl:someValuesFrom rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A model calculation is a transformation using at least one model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelComponent -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelComponent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115>A ModelComponent is a generically dependent continuant that is part of a model.</obo:IAO_0000115>
+        <obo:IAO_0000118>Model element</obo:IAO_0000118>
+        <rdfs:label>Model component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelExamples -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelExamples">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Support"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelFactsheet -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelFactsheet">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Factsheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelFunction -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelFunction">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+        <obo:IAO_0000112 xml:lang="en">The function that calculates the costs of the energy system in a simulation.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A model function is a model component that is a function.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ModelingSoftware -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ModelingSoftware">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Modus -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Modus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ObjectiveFunction -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ObjectiveFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OpenSource -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OpenSource">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Optimization -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Optimization">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelCalculation"/>
+        <owl:disjointWith rdf:resource="http://openenergy-platform.org/ontology/oeo/Simulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OptimizationModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OptimizationModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+        <obo:IAO_0000115 xml:lang="en">An optimization model is a model that optimizes a target function.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Plotting -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Plotting">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/PoliticalAssumption -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/PoliticalAssumption">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Assumption"/>
+        <obo:IAO_0000115 xml:lang="en">A political assumption is an assumption about political measures taken.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Postprocessing -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Postprocessing">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Transformation"/>
+        <obo:IAO_0000115 xml:lang="en">Postprocessing is a transformation that transforms the output of a model calculation into a form that is suitable for presentation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Preprocessing -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Transformation"/>
+        <obo:IAO_0000115 xml:lang="en">Preprocessing is a transformation that transforms the input into a form that is useable for a model calculation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/PrimaryOutputs -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/PrimaryOutputs">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ContentDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/PrimaryPurpose -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/PrimaryPurpose">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ContentDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Private -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Private">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Funding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ProgramParameter -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ProgramParameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Settings for a random number generator.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A program parameter is a variable that influences the output of  a calculation in the program but has no meaning outside of the program.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Project -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Project">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Public -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Public">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Funding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Reference -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Reference">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Robustness -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Robustness">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Scenario -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Scenario">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+        <obo:IAO_0000115 xml:lang="en">(WIP) A scenario is a collection of assumptions about the energy system.
+There is not yet a consens about the definition.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/ScenarioFactsheet -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/ScenarioFactsheet">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Factsheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Simulation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Simulation">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/ModelCalculation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SimulationModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SimulationModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Model"/>
+        <obo:IAO_0000115 xml:lang="en">A simultaion model is a model that simulates the behaviour of a system without a target function.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SingleNodeModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SingleNodeModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/GridModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Social -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Social">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SoftwareDescriptor -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SoftwareDescriptor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SoftwareElement -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SoftwareElement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A model component is a part of a model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SoftwareMaintenance -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SoftwareMaintenance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Solver -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Solver">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Study -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Study">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Support -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Support">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/SoftwareMaintenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/SynthethicDataset -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/SynthethicDataset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000112 xml:lang="en">The projected power usage during an idealized model year.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A synthetic dataset is a dataset that is optained by artificially creating data items. It is constructed to be an estimation of a real world dataset.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Technical -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Technical">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TestDataset -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TestDataset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TimeHorizon -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TimeHorizon">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TimeSeries -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TimeSeries">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TimeStep -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TimeStep">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Transformation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Transformation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <definition xml:lang="en">A transformation is a process that transforms one or more inputs into at least one output.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TranshipmentModel -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/TranshipmentModel">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/GridModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Type -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Type">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/DataDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Uncertainty -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Uncertainty">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/UserDocumentation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/UserDocumentation">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Validation -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Validation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Variable -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Variable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A Variable is an InformationArtifact that represents a changable value, vector, matrix or function within a mathematical expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/VariableOperationCost -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/VariableOperationCost">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Website -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Website">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/CorporateIdentity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Workshop -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/Workshop">
+        <rdfs:subClassOf rdf:resource="http://openenergy-platform.org/ontology/oeo/Support"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Accounting -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Accounting">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Active -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Active">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Modus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/AgentBasedProgramming -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/AgentBasedProgramming">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MathematicalConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/BackCasting -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/BackCasting">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/BottomUp -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/BottomUp">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/AnalyticalApproach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CPLEX -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/CPLEX">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Solver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/CSV -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/CSV">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Coin-Or_CBC -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Coin-Or_CBC">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Solver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DataFrame -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/DataFrame">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Dict -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Dict">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/DynamicProgramming -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/DynamicProgramming">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MathematicalConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Econometric -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Econometric">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/EconomicEquilibrium -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/EconomicEquilibrium">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/False -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/False">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/BooleanVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Fortran -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Fortran">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/FuzzyLogic -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/FuzzyLogic">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MathematicalConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/GAMS -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/GAMS">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/GLPK -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/GLPK">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Solver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/GNU -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/GNU">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Gurobi -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Gurobi">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Solver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Hybrid -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Hybrid">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/AnalyticalApproach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Inactive -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Inactive">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Modus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Java -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Java">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/LinearProgramming -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/LinearProgramming">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MathematicalConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MOSEK -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MOSEK">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Solver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MS_Excel -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MS_Excel">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Macro-Economic -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Macro-Economic">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MathProg -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MathProg">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Matlab -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Matlab">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MixedIntegerLinearProgramming -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MixedIntegerLinearProgramming">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MathematicalConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Modellca -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Modellca">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MonteCarlo -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MonteCarlo">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MultiCriteria -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MultiCriteria">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Optimization -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Optimization">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Other -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Other">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/AnalyticalApproach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/PHP -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/PHP">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Passive -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Passive">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Modus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Python -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Python">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/R -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/R">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Ruby -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Ruby">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Simulation -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Simulation">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Spreadsheet -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Spreadsheet">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Stochastic -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Stochastic">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Toolbox -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Toolbox">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/TopDown -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/TopDown">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/AnalyticalApproach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/True -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/True">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/BooleanVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Txt -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Txt">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/XLSX -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/XLSX">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/XML -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/XML">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/gdx -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/gdx">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/DataFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/C++ -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/C++">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/MS_Excel/VBA -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/MS_Excel/VBA">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/Framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/Spatial(GIS) -->
+
+    <owl:NamedIndividual rdf:about="http://openenergy-platform.org/ontology/oeo/Spatial(GIS)">
+        <rdf:type rdf:resource="http://openenergy-platform.org/ontology/oeo/MethodicalFocus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/Optimization">
+        <obo:IAO_0000115 xml:lang="en">An optimization is a model calculation with the goal to find a best choice or result for at least one variable or function in the model.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/Simulation">
+        <obo:IAO_0000115 xml:lang="en">A simulation is a model calculation that simulates a process or system behavior from the real world.</obo:IAO_0000115>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/LinearOptimalPowerflow"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/SingleNodeModel"/>
+            <rdf:Description rdf:about="http://openenergy-platform.org/ontology/oeo/TranshipmentModel"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

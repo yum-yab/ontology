@@ -1,0 +1,164 @@
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2002/07/owl#versionIRI> <http://openenergy-platform.org/ontology/v0.0.1/oeo/> .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2002/07/owl#imports> <https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl> .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2002/07/owl#imports> <https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/modules/modules_part=model.owl> .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2002/07/owl#imports> <https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/modules/modules_part=physical.owl> .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2002/07/owl#imports> <https://raw.githubusercontent.com/yum-yab/ontology/dev/databus/oe-ontology/modules/modules_part=social.owl> .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Anna Kleinau" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Christian Winger" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Fabian Neuhaus" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Hannah F\u00F6rster" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Izzet Kilicarslan" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Janna Hastings" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Lara Christmann" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Ludwig H\u00FClk" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Lukas Emele" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Martin Glauer" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Mirjam Stappel" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Pierre-Francois Duc" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/elements/1.1/contributor> "Sebastian Cordes" .
+<http://openenergy-platform.org/ontology/oeo/> <http://purl.org/dc/terms/title> "Open Energy Ontology" .
+<http://openenergy-platform.org/ontology/oeo/> <http://www.w3.org/2000/01/rdf-schema#comment> "The Open Energy Ontology is an ontology for all aspects of the energy modelling domain. \n\nIt is developed in three modules: 'oeo-model', a module for all entities related to models and modelling; 'oeo-physical', a module for all entities related to the world of energy and energy generation, and 'oeo-social' for all relevant social and economic aspects of the energy domain." .
+<http://openenergy-platform.org/ontology/oeo/definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://openenergy-platform.org/ontology/oeo/definition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://openenergy-platform.org/ontology/oeo/appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/comparesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/conforms_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/conforms_to> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/considers_User_behaviour_and_demand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/considers_User_behaviour_and_demand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/covers> .
+<http://openenergy-platform.org/ontology/oeo/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/covers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/covers> <http://purl.obolibrary.org/obo/IAO_0000115> "A relation that holds between a publication/model calculation/model and the thing it covers."@en .
+<http://openenergy-platform.org/ontology/oeo/covers_region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/covers_region> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/covers> .
+<http://openenergy-platform.org/ontology/oeo/covers_region> <http://purl.obolibrary.org/obo/IAO_0000115> "A relation that holds between a publication/model calculation/model and the region it covers."@en .
+<http://openenergy-platform.org/ontology/oeo/covers_technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/covers_technology> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/covers> .
+<http://openenergy-platform.org/ontology/oeo/covers_technology> <http://purl.obolibrary.org/obo/IAO_0000115> "A relation that holds between a publication/model calculation/model and the technology it models."@en .
+<http://openenergy-platform.org/ontology/oeo/covers_timeframe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/covers_timeframe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/covers> .
+<http://openenergy-platform.org/ontology/oeo/covers_timeframe> <http://purl.obolibrary.org/obo/IAO_0000115> "A relation that holds between a publication/model calculation/model and the timeframe it covers."@en .
+<http://openenergy-platform.org/ontology/oeo/distributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/distributes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/example_research_questions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/example_research_questions> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/further_reference_properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/further_reference_properties> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/generates_dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/generates_dataset> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0002234> .
+<http://openenergy-platform.org/ontology/oeo/handles_uncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/hasMaximum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/hasMaximum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/comparesTo> .
+<http://openenergy-platform.org/ontology/oeo/hasMinimum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/hasMinimum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/comparesTo> .
+<http://openenergy-platform.org/ontology/oeo/hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_Percentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/comparesTo> .
+<http://openenergy-platform.org/ontology/oeo/has_approach_to_uncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_approach_to_uncertainty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<http://openenergy-platform.org/ontology/oeo/has_author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_client> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_contact> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_documentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_funding_source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_funding_source> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_institution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_logo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<http://openenergy-platform.org/ontology/oeo/has_mathematical_objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_mathematical_objective> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<http://openenergy-platform.org/ontology/oeo/has_methodical_Focus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_methodical_Focus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_normal_state_of_matter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numercical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numercical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numercical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numerical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numerical_output> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0002234> .
+<http://openenergy-platform.org/ontology/oeo/has_numerical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_numerical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_input> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0002233> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_output> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0002234> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_physical_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_pollutant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_programvariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_programvariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/has_quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_sink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_sink> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://openenergy-platform.org/ontology/oeo/has_source> .
+<http://openenergy-platform.org/ontology/oeo/has_source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_spatial_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_state_of_matter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_subregion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_subregion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<http://openenergy-platform.org/ontology/oeo/has_subregion> <http://purl.obolibrary.org/obo/IAO_0000115> "A relation that holds between a region and a smaller region within."@en .
+<http://openenergy-platform.org/ontology/oeo/has_temporal_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_tool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/has_tool> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/RO_0000057> .
+<http://openenergy-platform.org/ontology/oeo/isEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/isEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://openenergy-platform.org/ontology/oeo/comparesTo> .
+<http://openenergy-platform.org/ontology/oeo/is_applied_to_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/is_connected_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/is_connected_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://openenergy-platform.org/ontology/oeo/is_equivalent_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/is_used_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/suited_for_many_scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/transmits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/transmits> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses_dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses_external_optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses_software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses_software_internal_data_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/uses_software_modelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/utilizes_dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/utilizes_program_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0002233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0002234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://openenergy-platform.org/ontology/oeo/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
