@@ -29,7 +29,7 @@
         dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
         dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
         dct:hasVersion          "1.3-SNAPSHOT" ;
-        dct:issued              "2020-02-27T16:07:56Z"^^xsd:dateTime ;
+        dct:issued              "2020-03-02T14:38:29Z"^^xsd:dateTime ;
         dct:license             <http://purl.oclc.org/NET/rdflicense/cc-zero1.0> ;
         dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
         dct:title               "DataID metadata for oe-ontology/imports"@en .
@@ -38,8 +38,32 @@ dataid-mt:ApplicationRDFXML
         a                dataid-mt:MediaType ;
         dataid:mimetype  "application/rdf+xml" .
 
-<https://databus.dbpedia.org/denis/oe-ontology/imports/2020.02.27-163000>
-        a       dataid:Version .
+<#imports_module=ro.nt>
+        a                            dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "ro" ;
+        dataid:duplicates            "0"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=ro.nt> ;
+        dataid:formatExtension       "nt" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "386"^^xsd:decimal ;
+        dataid:preview               "<http://open-energy-ontology.org/ontology/imports/ro-module.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://open-energy-ontology.org/ontology/imports/ro-module.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://open-energy-ontology.org/ontology/imports/ro-module.owl> .\n<http://open-energy-ontology.org/ontology/imports/ro-module.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"This file contains externally imported content from the Relations Ontology (RO) for import into the Open Energy Ontology (OEO). It is automatically extracted using ROBOT from the term list ro-terms.txt.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://www.w3.org/2000/01/rdf-schema#label> \"editor preferred term\"@en .\n<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> .\n<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/2000/01/rdf-schema#label> \"example of usage\"@en .\n<http://purl.obolibrary.org/obo/IAO_0000114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000114> <http://www.w3.org/2000/01/rdf-schema#label> \"has curation status\"@en ." ;
+        dataid:sha256sum             "ccfe1a173012adf34f24a0cc8ba21286615de23411e70b6ab82f422c49813fef" ;
+        dataid:signature             "mTLIMSBSqdfav2eKK/ozjcPLux0WBrxKknB+Tws5PSJo4M4/kqU1D1OzZ6jN9/870F7O3Ww3Vym3R6nx+SqXqW52E3MO2qnRJ1kYnxSaHEjwl4Rh4WCggIEnFtBdYXohRuHqWNohUla0SMmnmaZyC5nBYnHeOhNHeTw2ZWhleqJsbv0f/aWU9ER5w9Nw8uJJJNplv0PlGIUTjdPkRgQicJpUKt2gZKoH+uoAXqeSA4p2190bg6Md2YP/Ne69eKkelOPxizIYYkzVYlTLWJ+jXhmVrSIpFdGkWv6fa7wr0xSQaamnVKvZR5ivpihWhTFM0DTt68+0WbTnaiEkgfVw/g==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "62164"^^xsd:decimal ;
+        dataid-cv:module             "ro" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-03-02T14:35:44Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "62164"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=ro.nt> ;
+        dcat:mediaType               dataid-mt:ApplicationNTriples .
 
 <https://databus.dbpedia.org/denis/oe-ontology>
         a       dataid:Group .
@@ -47,13 +71,43 @@ dataid-mt:ApplicationRDFXML
 <https://databus.dbpedia.org/denis/oe-ontology/imports>
         a       dataid:Artifact .
 
+<https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000>
+        a       dataid:Version .
+
+<#imports_module=iao.nt>
+        a                            dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "iao" ;
+        dataid:duplicates            "0"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=iao.nt> ;
+        dataid:formatExtension       "nt" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "1610"^^xsd:decimal ;
+        dataid:preview               "<http://open-energy-ontology.org/ontology/imports/iao-module.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://open-energy-ontology.org/ontology/imports/iao-module.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://open-energy-ontology.org/ontology/imports/iao-module.owl> .\n<http://open-energy-ontology.org/ontology/imports/iao-module.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"This file contains externally imported content from the Information Artifact Ontology (IAO) for import into the Open Energy Ontology (OEO). It is automatically extracted using ROBOT.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> \"editor preferred label\" .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> \"editor preferred label\"@en .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> \"editor preferred term\" .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> \"editor preferred term\"@en .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> \"editor preferred term~editor preferred label\" .\n<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ." ;
+        dataid:sha256sum             "65154844c33daab0839cd7163f5430f110faddce23d0bf27d72c31cb63f5db20" ;
+        dataid:signature             "cnnGhhtEaR7GmzpKgk8PVyBQQ5dDxGkd9xJRqR4upgKNr/rWvYZsO5+/UCqxZfvwri/6W6RRlwJM/fKRNtMePuz/3UNnh4IMAlZbTA5i1EzNAXyBFVxn7kNeBoEwl7LjFDzzJ0NVEDNfj5RjuxtWf6KD3Fb1Hye0MoLSZsWCrAGTr9NOchpzHDwybSQaMo/VDIJY91+E6ixGOcUdu5BVODr4URYMAnOMJGNNMamCE9QdGJDMocRbLfaj0u/kvmWdQNaRWE8hcn9vQJECI8SWlrbjOQ86VC09Ll6y+2W/+SZzNY8ZeEFLSysVJlmis1w5XXnOr8yL9mpZHCZlSRSgWg==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "257590"^^xsd:decimal ;
+        dataid-cv:module             "iao" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-03-02T14:35:44Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "257590"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=iao.nt> ;
+        dcat:mediaType               dataid-mt:ApplicationNTriples .
+
 <#imports_module=ro.owl>
         a                            dataid:SingleFile ;
         dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:compression           "None" ;
         dataid:contentVariant        "ro" ;
         dataid:duplicates            "65"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.02.27-163000/imports_module=ro.owl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=ro.owl> ;
         dataid:formatExtension       "owl" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
@@ -65,14 +119,41 @@ dataid-mt:ApplicationRDFXML
         dataid:uncompressedByteSize  "49582"^^xsd:decimal ;
         dataid-cv:module             "ro" ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.27-163000" ;
-        dct:issued                   "2020-02-27T16:07:56Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-27T16:07:13Z"^^xsd:dateTime ;
+        dct:modified                 "2020-03-02T14:35:28Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
         dcat:byteSize                "49582"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/imports/imports_module=ro.owl> ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=ro.owl> ;
         dcat:mediaType               dataid-mt:ApplicationRDFXML .
+
+<#imports_module=uo.nt>
+        a                            dataid:SingleFile ;
+        dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
+        dataid:compression           "None" ;
+        dataid:contentVariant        "uo" ;
+        dataid:duplicates            "0"^^xsd:decimal ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=uo.nt> ;
+        dataid:formatExtension       "nt" ;
+        dataid:isDistributionOf      <#Dataset> ;
+        dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
+        dataid:nonEmptyLines         "5426"^^xsd:decimal ;
+        dataid:preview               "<http://purl.obolibrary.org/obo/uo.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/uo/releases/2019-04-01/uo.owl> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule> \"* UO:$sequence(7,0,9999999)$\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#auto-generated-by> \"OBO-Edit 2.1-beta19\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#date> \"09:04:2014 13:37\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#default-namespace> \"quality\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> \"1.2\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.geneontology.org/formats/oboInOwl#saved-by> \"gkoutos\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/uo.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"Filtered by Ancestor ID equals \\\"UO:0000000\\\"\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> ." ;
+        dataid:sha256sum             "8a91c0d0c1a8816f61ddb4b9fa9a35dd6d320d9f76524200c025a2143c725639" ;
+        dataid:signature             "oT4RwpRdKHVxJNl2cSnzRytWgC36JOxvY4mObc/adL55xQhBzE93djmSMJk6V8W5BevpIsYKPGpdlRbBtb3jjD+Z2j2c+4K3Qf9Zq0m/+2fdH7KLHuMDcXMZvnSRh6t2jJo30PGX6DVO3ZqKPSXAaRveza+3jFfI1D/K8X5SQuY0jEgWkIMFwdWFFzmxwFdAOFq+lmSJ6tSka41UIJlFj6peayvXJULMZb/mjj25TSKWd0rWuuQBAxzD7T1AtbvwR0F7ZC+vpHMOVZcDE+yr1PpnNirmXh6VKiES/YGgwvZTPF3c3heunhrIDe8Odwgfm9ACSfknAorjfKRX4r4zhw==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "822259"^^xsd:decimal ;
+        dataid-cv:module             "uo" ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified                 "2020-03-02T14:35:44Z"^^xsd:dateTime ;
+        dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
+        dcat:byteSize                "822259"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=uo.nt> ;
+        dcat:mediaType               dataid-mt:ApplicationNTriples .
 
 <#Dataset>  a                   dataid:Dataset ;
         rdfs:comment            "Sooner or later this will be deleted, so theres no closer description needed"@en ;
@@ -81,17 +162,17 @@ dataid-mt:ApplicationRDFXML
         dataid:artifact         <https://databus.dbpedia.org/denis/oe-ontology/imports> ;
         dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:group            <https://databus.dbpedia.org/denis/oe-ontology> ;
-        dataid:groupdocu        "## Attribution fulfilled by\n* (when deriving another dataset and releasing to the Databus) adding the Databus link to the provenance https://databus.dbpedia.org/dbpedia/oe-ontology/imports/imports/2020.02.27-163000\n* on your website:\n  * include the DBpedia logo and mention the usage of DBpedia with this link: https://databus.dbpedia.org/dbpedia\n  * include backlinks from your pages to the individual entities, e.g. http://dbpedia.org/resource/Berlin\n* in academic publications cite: DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia, J. Lehmann, R. Isele, M. Jakob, A. Jentzsch, D. Kontokostas, P. Mendes, S. Hellmann, M. Morsey, P. van Kleef, S. Auer, and C. Bizer. Semantic Web Journal 6 (2): 167--195 (2015)\n## How to contribute\nDBpedia is a community project, help us with:\n* editing the mappings and ontology at http://mappings.dbpedia.org\n* improve this documentation at https://github.com/dbpedia/databus-maven-plugin/tree/master/dbpedia/mappings/imports/imports.md\n## Origin\nThis dataset was extracted using the wikipedia-dumps available on https://dumps.wikimedia.org/\nusing the DBpedia Extraction-Framework available at https://github.com/dbpedia/extraction-framework\nFor more technical information on how these datasets were generated, please visit http://dev.dbpedia.org\n## Group changelog" ;
+        dataid:groupdocu        "## Attribution fulfilled by\n* (when deriving another dataset and releasing to the Databus) adding the Databus link to the provenance https://databus.dbpedia.org/dbpedia/oe-ontology/imports/imports/2020.03.02-153000\n* on your website:\n  * include the DBpedia logo and mention the usage of DBpedia with this link: https://databus.dbpedia.org/dbpedia\n  * include backlinks from your pages to the individual entities, e.g. http://dbpedia.org/resource/Berlin\n* in academic publications cite: DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia, J. Lehmann, R. Isele, M. Jakob, A. Jentzsch, D. Kontokostas, P. Mendes, S. Hellmann, M. Morsey, P. van Kleef, S. Auer, and C. Bizer. Semantic Web Journal 6 (2): 167--195 (2015)\n## How to contribute\nDBpedia is a community project, help us with:\n* editing the mappings and ontology at http://mappings.dbpedia.org\n* improve this documentation at https://github.com/dbpedia/databus-maven-plugin/tree/master/dbpedia/mappings/imports/imports.md\n## Origin\nThis dataset was extracted using the wikipedia-dumps available on https://dumps.wikimedia.org/\nusing the DBpedia Extraction-Framework available at https://github.com/dbpedia/extraction-framework\nFor more technical information on how these datasets were generated, please visit http://dev.dbpedia.org\n## Group changelog" ;
         dataid:maintainer       <https://gcpdev.github.io/webid.ttl#this> ;
-        dataid:version          <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.02.27-163000> ;
+        dataid:version          <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000> ;
         dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
         dct:description         "" ;
-        dct:hasVersion          "2020.02.27-163000" ;
-        dct:issued              "2020-02-27T16:07:56Z"^^xsd:dateTime ;
+        dct:hasVersion          "2020.03.02-153000" ;
+        dct:issued              "2020-03-02T14:38:29Z"^^xsd:dateTime ;
         dct:license             <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
         dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
         dct:title               "Imported ontologies of the OpenEnergyPlatform"@en ;
-        dcat:distribution       <#imports_module=ro.owl> , <#imports_module=iao.owl> , <#imports_module=uo.owl> .
+        dcat:distribution       <#imports_module=ro.owl> , <#imports_module=iao.owl> , <#imports_module=uo.nt> , <#imports_module=ro.nt> , <#imports_module=uo.owl> , <#imports_module=iao.nt> .
 
 dataid:contentVariant
         a       <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -102,7 +183,7 @@ dataid:contentVariant
         dataid:compression           "None" ;
         dataid:contentVariant        "uo" ;
         dataid:duplicates            "418"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.02.27-163000/imports_module=uo.owl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=uo.owl> ;
         dataid:formatExtension       "owl" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
@@ -114,13 +195,13 @@ dataid:contentVariant
         dataid:uncompressedByteSize  "643720"^^xsd:decimal ;
         dataid-cv:module             "uo" ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.27-163000" ;
-        dct:issued                   "2020-02-27T16:07:56Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-27T16:07:13Z"^^xsd:dateTime ;
+        dct:modified                 "2020-03-02T14:35:28Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
         dcat:byteSize                "643720"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/imports/imports_module=uo.owl> ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=uo.owl> ;
         dcat:mediaType               dataid-mt:ApplicationRDFXML .
 
 dataid-cv:module  rdfs:subPropertyOf  dataid:contentVariant .
@@ -131,7 +212,7 @@ dataid-cv:module  rdfs:subPropertyOf  dataid:contentVariant .
         dataid:compression           "None" ;
         dataid:contentVariant        "iao" ;
         dataid:duplicates            "190"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.02.27-163000/imports_module=iao.owl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/oe-ontology/imports/2020.03.02-153000/imports_module=iao.owl> ;
         dataid:formatExtension       "owl" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
@@ -143,11 +224,15 @@ dataid-cv:module  rdfs:subPropertyOf  dataid:contentVariant .
         dataid:uncompressedByteSize  "197920"^^xsd:decimal ;
         dataid-cv:module             "iao" ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.27-163000" ;
-        dct:issued                   "2020-02-27T16:07:56Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.03.02-153000" ;
+        dct:issued                   "2020-03-02T14:38:29Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-27T16:07:13Z"^^xsd:dateTime ;
+        dct:modified                 "2020-03-02T14:35:28Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
         dcat:byteSize                "197920"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/67abb54c9ad7c105ea74541f45af45c776847f49/databus/oe-ontology/imports/imports_module=iao.owl> ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/ontology/e69b491e880ee9f361c3446fe86be6a8200871c0/databus/oe-ontology/imports/imports_module=iao.owl> ;
         dcat:mediaType               dataid-mt:ApplicationRDFXML .
+
+dataid-mt:ApplicationNTriples
+        a                dataid-mt:MediaType ;
+        dataid:mimetype  "application/n-triples" .
